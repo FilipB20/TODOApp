@@ -8,6 +8,11 @@ namespace TODOApp
 {
     internal class SchoolTask : Task
     {
-
+        string Course;
+        
+        public SchoolTask(string name,string description,DateTime dueDate,string course) : base(name, description, dueDate)
+        {
+            Course = course;
+        }
     }
 }

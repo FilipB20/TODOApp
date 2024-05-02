@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace TODOApp
 {
-    internal class FriendTask : Task
+    class FriendTask : Task
     {
+        Friend friend;
+        public FriendTask(string name,string description,DateTime dueDate,Friend friend) : base(name, description, dueDate)
+        {
+            this.friend = friend;
+        }
     }
 }
